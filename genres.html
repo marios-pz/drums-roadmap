@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drum Genres · Drums Roadmap</title>
+<meta name="description" content="The core grooves of rock, metal, punk, funk, jazz, blues, country, reggae, latin, hip-hop, disco and gospel, in real drum notation you can play.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23a3311d'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="masthead">
+  <a class="wordmark" href="./">Drums <i>Roadmap</i></a>
+  <nav aria-label="Site">
+    <a href="./">Roadmap</a>
+    <a href="genres.html" aria-current="page">Genres</a>
+    <a href="sticks.html">Sticks</a>
+  </nav>
+</header>
+
+<div class="page prose">
+  <main id="main"></main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js"></script>
+<script src="assets/media.js"></script>
+<script src="assets/drums.js"></script>
+<script>
+const r = (s, n) => s.repeat(n);
+const BACKBEAT = "....x.......x...";
+
+const GENRES = [
+  { id: "rock", name: "Rock", img: "genre-rock", tempo: "90 to 140 BPM", feel: "Straight 8th notes",
+    text: "Rock is built on the backbeat: the snare on 2 and 4, a steady 8th-note pattern on the hi-hat or ride, and a kick drum that locks in with the bass guitar. Power and consistency matter more than complexity.",
+    listen: ["A backbeat on 2 and 4 that never wavers", "A crash on the 1 of each new section", "Fills that lift the band into the chorus"],
+    grooves: [
+      ["Basic rock beat", { sub: 4, bpm: 100, hh: r("x.", 8), sn: BACKBEAT, kk: "x.......x......." }],
+      ["Rock with open hi-hat", { sub: 4, bpm: 100, hh: "x.x.x.x.x.x.x.o.", sn: BACKBEAT, kk: "x.x.....x.x....." }],
+    ], videos: ["rock", "kick-vars"] },
+  { id: "metal", name: "Metal", img: "genre-metal", tempo: "100 to 250+ BPM", feel: "16th notes, double bass",
+    text: "Fast, loud and precise. Metal drumming leans on double bass patterns, gallops and blast beats, usually locked tightly to the guitar riffs. Evenness and endurance matter more than raw speed, so build these up slowly.",
+    listen: ["Kick patterns that follow the guitar riff", "Crash or china cymbals on every beat in heavy sections", "Sudden switches between half-time and full speed"],
+    grooves: [
+      ["Gallop", { sub: 4, bpm: 100, cr: "x...............", hh: "....x...x...x...", sn: BACKBEAT, kk: r("x.xx", 4) }],
+      ["Double bass 16ths", { sub: 4, bpm: 90, cr: r("x...", 4), sn: BACKBEAT, kk: r("x", 16) }],
+      ["Blast beat (start slow)", { sub: 4, bpm: 90, rd: r("x.", 8), sn: r(".x", 8), kk: r("x.", 8) }],
+    ], videos: ["metal", "blast", "doublebass"] },
+  { id: "punk", name: "Punk", img: "genre-punk", tempo: "150 to 220 BPM", feel: "Fast straight 8th notes",
+    text: "Fast, simple and full of energy. The skank beat, where kick and snare alternate on every 8th note, is the sound of fast punk. Stamina and a relaxed grip are what keep it going for a whole set.",
+    listen: ["Kick and snare trading 8th notes", "Open, washy hi-hat or ride", "Very few fills, lots of drive"],
+    grooves: [
+      ["Skank beat", { sub: 2, bpm: 170, hh: r("x", 8), sn: r(".x", 4), kk: r("x.", 4) }],
+    ], videos: ["punk"] },
+  { id: "funk", name: "Funk", tempo: "85 to 115 BPM", feel: "16th-note feel, ghost notes",
+    text: "In funk everything serves the groove. Syncopated kick patterns, ghost notes on the snare and a tight 16th-note feel. Funk drummers play \"in the pocket\": exactly in time with a strong backbeat, and leave space for the bass.",
+    listen: ["Quiet ghost notes between the backbeats", "Kick drums placed on the \"e\" and \"a\" of the beat", "A backbeat that stays strong and consistent"],
+    grooves: [
+      ["Ghost-note groove", { sub: 4, bpm: 90, hh: r("x.", 8), sn: "....X..g.g..X..g", kk: "x.x.......x..x.." }],
+      ["16th-note hi-hat funk", { sub: 4, bpm: 85, hh: r("Xxxx", 4), sn: "....X..g.g..X...", kk: "x..x..x...x....." }],
+    ], videos: ["funk", "ghost", "linear"] },
+  { id: "jazz", name: "Jazz", img: "genre-jazz", tempo: "60 to 300 BPM", feel: "Swing, triplet based",
+    text: "In jazz the ride cymbal carries the time, the hi-hat foot marks 2 and 4, and the snare and kick \"comp\": short accents that answer the soloist. The volume is low and listening is everything. Brushes are common on ballads.",
+    listen: ["The \"ding, ding-a\" swing pattern on the ride", "Hi-hat chick on 2 and 4", "Snare and kick conversations with the other players"],
+    grooves: [
+      ["Swing ride pattern", { sub: 2, bpm: 120, swing: true, rd: "x.xxx.xx", hf: "..x...x.", kk: "g.g.g.g." }],
+      ["Adding a comping snare", { sub: 2, bpm: 120, swing: true, rd: "x.xxx.xx", sn: "...x....", hf: "..x...x.", kk: "g.g.g.g." }],
+    ], videos: ["jazz", "brushes", "fours"] },
+  { id: "blues", name: "Blues", img: "genre-blues", tempo: "50 to 120 BPM", feel: "Shuffle and 12/8",
+    text: "Blues drumming is mostly shuffles and slow 12/8 grooves. Simple, deep and patient: the groove has to breathe around the singer and the guitar.",
+    listen: ["The long-short bounce of the shuffle", "Slow triplets on the hi-hat or ride in 12/8", "Drums that get louder only when the band does"],
+    grooves: [
+      ["Shuffle", { sub: 3, bpm: 90, hh: r("x.x", 4), sn: "...x.....x..", kk: "x.....x....." }],
+      ["12/8 slow blues", { sub: 3, bpm: 55, hh: r("Xxx", 4), sn: "...x.....x..", kk: "x.....x.x..." }],
+    ], videos: ["blues", "shuffle", "128"] },
+  { id: "country", name: "Country", img: "genre-country", tempo: "90 to 180 BPM", feel: "Train beat, two-step",
+    text: "Country drumming supports the song. The main patterns are the train beat (16th notes on the snare, often with brushes), the two-step (kick on 1 and 3, cross-stick on 2 and 4) and the shuffle. Simple patterns, played with a lot of feel.",
+    listen: ["A steady \"chugging\" snare in up-tempo songs", "Cross-stick on 2 and 4 in ballads and two-steps", "Brushes instead of sticks"],
+    grooves: [
+      ["Train beat", { sub: 4, bpm: 100, sn: "xxxxXxxxxxxxXxxx", stick: r("RL", 8), kk: "x.......x......." }],
+      ["Two-step", { sub: 4, bpm: 120, hh: r("x.", 8), rs: BACKBEAT, kk: "x.......x......." }],
+    ], videos: ["country", "brushes"] },
+  { id: "reggae", name: "Reggae", img: "genre-reggae", tempo: "60 to 90 BPM", feel: "Swung and laid back",
+    text: "Reggae flips the beat around. In the one drop nothing is played on 1: kick and snare land together on 3. Rockers puts the kick on every beat. Everything sits slightly behind the beat.",
+    listen: ["Empty first beat in the one drop", "Cross-stick instead of a full snare", "Swung hi-hat with small open accents"],
+    grooves: [
+      ["One drop", { sub: 3, bpm: 75, hh: r("x.x", 4), rs: "......x.....", kk: "......x....." }],
+      ["Rockers", { sub: 3, bpm: 75, hh: r("x.x", 4), rs: "...x.....x..", kk: "x..x..x..x.." }],
+    ], videos: ["onedrop"] },
+  { id: "latin", name: "Latin", tempo: "Varies by style", feel: "Built around the clave",
+    text: "A large family of styles from Brazil, Cuba and beyond. Much of it is organised around a repeating clave rhythm that the whole band feels. Start with bossa nova and the son clave, then explore samba, songo and Afro-Cuban 6/8.",
+    listen: ["A two-bar clave pattern that never changes", "Cross-stick and cowbell parts", "Kick drum that imitates the bass line"],
+    grooves: [
+      ["Bossa nova", { sub: 2, bpm: 130, hh: r("x", 16), rs: "x..x..x...x..x..", kk: r("x..xx..x", 2) }],
+      ["Son clave (3-2) with a tumbao kick", { sub: 2, bpm: 100, hh: r("x", 16), rs: "x..x..x...x.x...", kk: r("...x...x", 2) }],
+    ], videos: ["bossa", "latin"] },
+  { id: "hiphop", name: "Hip-hop", tempo: "80 to 100 BPM", feel: "Heavy and laid back",
+    text: "Hip-hop drummers recreate the feel of sampled drum breaks: a heavy kick, a fat snare on 2 and 4, and a hi-hat that sits back. Less is more. Repetition is the point.",
+    listen: ["Kick patterns with a lot of space", "Snare that sits slightly late", "Very consistent volume from bar to bar"],
+    grooves: [
+      ["Boom bap", { sub: 4, bpm: 90, hh: r("x.", 8), sn: "....X.......X...", kk: "x.......x.x..x.." }],
+    ], videos: ["hiphop"] },
+  { id: "disco", name: "Disco and pop", tempo: "110 to 130 BPM", feel: "Four on the floor",
+    text: "A kick on every beat drives the dance floor, with an open hi-hat on the offbeats. Much of modern pop and dance music still runs on this.",
+    listen: ["Kick on all four beats", "Open hi-hat on every \"&\"", "Snare or clap on 2 and 4"],
+    grooves: [
+      ["Four on the floor", { sub: 4, bpm: 115, hh: r("x.o.", 4), sn: BACKBEAT, kk: r("x...", 4) }],
+    ], videos: ["disco"] },
+  { id: "gospel", name: "Gospel", tempo: "60 to 140 BPM", feel: "Grooves, chops and big dynamics",
+    text: "Church music, where drummers support a choir and band through huge changes in volume and energy. Gospel drummers are known for fast, flashy fills (\"chops\") built from rudiments and linear patterns, and for deep grooves underneath. The rudiment and independence lessons in the roadmap are the foundation.",
+    listen: ["Long builds from very quiet to very loud", "Fast linear fills between phrases", "Grooves that follow the organ and bass closely"],
+    grooves: [], videos: ["gospel", "linear"] },
+];
+
+const $ = s => document.querySelector(s);
+$("#main").innerHTML = `
+  <p class="eyebrow sc" style="margin-top:40px">Library</p>
+  <h1>Genres</h1>
+  <p class="lede">The signature grooves of twelve styles. Each one is written in standard drum notation and plays in your browser, so you can hear it and read it at the same time. New to notation? Start with lesson 2 of the <a href="./#level-2">roadmap</a>.</p>
+  <ul class="index">${GENRES.map(g => `<li><a href="#${g.id}">${g.name}</a></li>`).join("")}</ul>
+  ${GENRES.map(g => `
+    <section id="${g.id}">
+      <h2>${g.name}</h2>
+      <p class="facts"><span><b>Tempo</b> ${g.tempo}</span><span><b>Feel</b> ${g.feel}</span></p>
+      <p>${esc(g.text)}</p>
+      <h3>What to listen for</h3>
+      <ul>${g.listen.map(l => `<li>${esc(l)}</li>`).join("")}</ul>
+      ${g.img ? photoHTML(g.img) : ""}
+      ${g.grooves.map(([title, groove], i) => grooveHTML(`${g.id}-${i}`, groove, title)).join("")}
+      <div class="two">${g.videos.map(videoHTML).join("")}</div>
+    </section>`).join("")}
+  <footer>
+    <p>Videos are embedded from YouTube and belong to their creators; none of them are sponsored. Photos come from Wikimedia Commons under the licenses shown. Tempo ranges are typical, not rules.</p>
+  </footer>`;
+renderScores();
+</script>
+</body>
+</html>
