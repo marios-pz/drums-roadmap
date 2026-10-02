@@ -8,6 +8,13 @@ import { metronome, NOTATION_KEY, scoreWidth, toAbc, type Groove } from "../lib/
 // abcjs's type definitions leave these two out, but SynthController supports them.
 type Controller = SynthObjectController & { cursorControl: CursorControl | null; destroy(): void };
 
+// Drum samples are served from this site (public/soundfont). abcjs only boosts the volume for its
+// own default sound URL, so the same boost is applied here.
+const sound = {
+  soundFontUrl: `${import.meta.env.BASE_URL.replace(/\/$/, "")}/soundfont/`,
+  soundFontVolumeMultiplier: 3,
+};
+
 const drawOptions = {
   add_classes: true,
   responsive: "resize" as const,
@@ -70,8 +77,8 @@ class GroovePlayer extends HTMLElement {
     this.controller = controller;
     this.button.textContent = "Loading";
 
-    const options = this.metronomeBox.checked ? { drum: metronome(this.groove), drumBars: 1 } : {};
-    await controller.setTune(this.draw(), true, options);
+    const click = this.metronomeBox.checked ? { drum: metronome(this.groove), drumBars: 1 } : {};
+    await controller.setTune(this.draw(), true, { ...sound, ...click });
     if (this.controller !== controller) return controller.destroy(); // stopped while loading
     controller.toggleLoop();
     controller.play();
