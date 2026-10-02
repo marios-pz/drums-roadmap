@@ -1,0 +1,55 @@
+part: Beginner
+title: Hands and Reading
+intro: Most of drumming is your hands, and most learning material is written down. Build both here.
+tasks:
+  - id: read
+    title: Read drum notation
+    text: Drum music uses a normal five-line staff, but each line or space is a drum instead of a pitch.
+      Kick sits low, snare in the middle, cymbals on top with x-shaped noteheads. Hands are usually
+      written with stems up, feet with stems down. Keep this key handy; every exercise on this site
+      uses it.
+    goal: Look at any groove on this site and say which drum plays on each beat.
+    notationKey: true
+    video: read
+  - id: values
+    title: Quarter, 8th and 16th notes
+    text: Same tempo, three speeds. One bar of quarter notes (one per beat), one bar of 8th notes (two
+      per beat, joined by one beam) and one of 16th notes (four per beat, two beams). The tempo
+      never changes, only how many notes fit in each beat.
+    goal: Switch every bar at 70 BPM without speeding up or slowing down.
+    groove:
+      sub: 4
+      bpm: 70
+      sn: x... x... x... x... | x.x. x.x. x.x. x.x. | xxxx xxxx xxxx xxxx
+    video: values
+  - id: singles
+    title: Single strokes
+    text: "Alternate hands: R L R L. The letters under the notes are the sticking. Both hands should
+      sound identical: same height, same volume."
+    goal: 16th-note singles at 80 BPM for two minutes, even volume in both hands.
+    groove:
+      sub: 4
+      bpm: 70
+      sn: xxxx xxxx xxxx xxxx
+      stick: RLRL RLRL RLRL RLRL
+    video: singles
+  - id: doubles
+    title: Double strokes
+    text: "Two strokes per hand: R R L L. Make the second stroke as loud as the first: let the stick
+      bounce, then add a small push from the fingers."
+    goal: 16th-note doubles at 80 BPM, second stroke as loud as the first.
+    groove:
+      sub: 4
+      bpm: 60
+      sn: xxxx xxxx xxxx xxxx
+      stick: RRLL RRLL RRLL RRLL
+    video: doubles
+  - id: offbeats
+    title: Play only the "&"
+    text: "The 8th rests mean: don't play there. Count \"1 & 2 & 3 & 4 &\" and only hit on \"&\",
+      between the clicks."
+    goal: Only the offbeats for one minute at 70 BPM with the metronome on.
+    groove:
+      sub: 4
+      bpm: 70
+      sn: ..x. ..x. ..x. ..x.

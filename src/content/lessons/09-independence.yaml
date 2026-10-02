@@ -1,0 +1,48 @@
+part: Advanced
+title: Independence
+intro: Make each limb do its own thing without the others falling apart.
+tasks:
+  - id: kickdoubles
+    title: Kick doubles
+    text: Two fast 16th-note kicks in a row while the hands stay steady.
+    goal: Two minutes at 90 BPM, both kicks equal.
+    groove:
+      sub: 4
+      bpm: 75
+      hh: x.x. x.x. x.x. x.x.
+      sn: .... x... .... x...
+      kk: x... .... xx.x ..xx
+    video: kickdoubles
+  - id: linear
+    title: Linear groove
+    text: No two limbs ever play at the same time. It creates a flowing, funky texture.
+    goal: Two minutes at 80 BPM, every note clean and separate.
+    groove:
+      sub: 4
+      bpm: 65
+      hh: .xx. .x.. .xx. ..xx
+      sn: .... X.g. .... X...
+      kk: x..x .... x..x ....
+    video: linear
+  - id: hands-feet
+    title: Paradiddles over steady feet
+    text: Paradiddles on the snare while the kick plays quarter notes and the hi-hat foot plays 2 and 4.
+    goal: Two minutes at 80 BPM, feet never drifting.
+    groove:
+      sub: 4
+      bpm: 70
+      sn: Xxxx Xxxx Xxxx Xxxx
+      kk: x... x... x... x...
+      hf: .... x... .... x...
+      stick: RLRR LRLL RLRR LRLL
+    video: independence
+  - id: ostinato
+    title: Foot ostinato
+    text: Lock the feet into a pattern (kick on 1 and the "&" of 2, hi-hat foot on 2 and 4), then
+      improvise freely with the hands on top.
+    goal: Improvise with the hands for two minutes at 80 BPM without the feet changing.
+    groove:
+      sub: 4
+      bpm: 70
+      kk: x... ..x. x... ..x.
+      hf: .... x... .... x...

@@ -1,0 +1,88 @@
+part: Intermediate
+title: Styles
+intro: Every genre has a signature groove. Learn the core pattern of each here; the Genres page goes
+  deeper.
+tasks:
+  - id: funk
+    title: Funk
+    text: Syncopated kick, ghost notes, tight hi-hat. Keep the backbeat strong and the ghosts tiny.
+    goal: Two minutes at 85 BPM, grooving, not just correct.
+    groove:
+      sub: 4
+      bpm: 75
+      hh: x.x. x.x. x.x. x.x.
+      sn: .... X..g .g.. X..g
+      kk: x.x. .... ..x. .x..
+    video: funk
+  - id: disco
+    title: Disco and four on the floor
+    text: Kick on every beat and an open hi-hat on every "&". Dance music runs on this.
+    goal: Two minutes at 115 BPM.
+    groove:
+      sub: 4
+      bpm: 110
+      hh: x.o. x.o. x.o. x.o.
+      sn: .... x... .... x...
+      kk: x... x... x... x...
+    video: disco
+  - id: metal
+    title: Metal gallop
+    text: The kick plays a gallop (an 8th and two 16ths) under quarter notes on the hi-hat and a
+      backbeat. Played on one pedal or two.
+    goal: Two minutes at 110 BPM with every kick even.
+    groove:
+      sub: 4
+      bpm: 90
+      cr: x... .... .... ....
+      hh: .... x... x... x...
+      sn: .... x... .... x...
+      kk: x.xx x.xx x.xx x.xx
+    video: metal
+  - id: country
+    title: Country train beat
+    text: 16th notes on the snare with accents on 2 and 4, kick on 1 and 3. It sounds like a train
+      rolling down the track. Often played with brushes.
+    goal: Two minutes at 100 BPM, accents clear and the 16ths even.
+    groove:
+      sub: 4
+      bpm: 90
+      sn: xxxx Xxxx xxxx Xxxx
+      kk: x... .... x... ....
+      stick: RLRL RLRL RLRL RLRL
+    video: country
+  - id: onedrop
+    title: Reggae one drop
+    text: Nothing on 1. Kick and cross-stick land together on 3, under a swung hi-hat.
+    goal: Two minutes at 75 BPM, resisting the urge to play on 1.
+    groove:
+      sub: 3
+      bpm: 75
+      hh: x.x x.x x.x x.x
+      rs: ... ... x.. ...
+      kk: ... ... x.. ...
+    video: onedrop
+  - id: jazz
+    title: Jazz ride pattern
+    text: '"Ding, ding-a, ding, ding-a" on the ride, hi-hat foot on 2 and 4, kick feathered very softly
+      on all four beats.'
+    goal: Three minutes at 120 BPM, relaxed and swinging.
+    groove:
+      sub: 2
+      bpm: 120
+      swing: true
+      rd: x. xx x. xx
+      kk: g. g. g. g.
+      hf: .. x. .. x.
+    video: jazz
+  - id: bossa
+    title: Bossa nova
+    text: Steady 8ths on the hi-hat, a soft kick pattern, and a clave rhythm on cross-stick spread over
+      two bars.
+    goal: Two minutes at 130 BPM, soft and smooth.
+    groove:
+      sub: 2
+      bpm: 130
+      hh: xx xx xx xx | xx xx xx xx
+      rs: x. .x .. x. | .. x. .x ..
+      kk: x. .x x. .x | x. .x x. .x
+    video: bossa

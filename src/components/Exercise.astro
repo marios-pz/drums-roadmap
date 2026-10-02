@@ -1,0 +1,105 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Groove from "./Groove.astro";
+import NotationKey from "./NotationKey.astro";
+import Photo from "./Photo.astro";
+import Video from "./Video.astro";
+
+interface Props {
+  task: CollectionEntry<"lessons">["data"]["tasks"][number];
+  /** Shown before the title, e.g. "3.1". */
+  number: string;
+}
+
+const { task, number } = Astro.props;
+---
+
+<li data-exercise={task.id}>
+  <input type="checkbox" data-done={task.id} aria-label={`Mark complete: ${task.title}`} />
+  <details>
+    <summary>
+      <span class="number">{number}</span>
+      <span class="title">{task.title}</span>
+    </summary>
+    <div class="body">
+      <p>{task.text}</p>
+      {task.notationKey && <NotationKey />}
+      {task.groove && <Groove groove={task.groove} />}
+      <p class="goal">
+        <b>Goal</b> {task.goal}
+      </p>
+      {task.image && <Photo id={task.image.id} />}
+      {task.video && <Video id={task.video.id} />}
+    </div>
+  </details>
+</li>
+
+<style>
+  li {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 4px 12px;
+    border-bottom: 1px solid var(--rule);
+    padding: 16px 0;
+  }
+  input {
+    width: 20px;
+    height: 20px;
+    margin: 5px 0 0;
+    accent-color: var(--accent);
+    cursor: pointer;
+  }
+  input:disabled {
+    cursor: not-allowed;
+  }
+  summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary::after {
+    content: "Open";
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--muted);
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.06em;
+  }
+  details[open] summary::after {
+    content: "Close";
+  }
+  .number {
+    min-width: 2.2em;
+    color: var(--muted);
+    font-weight: 400;
+    font-size: 16px;
+    font-variant-numeric: tabular-nums;
+  }
+  li.done .title {
+    text-decoration: line-through;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 2px;
+  }
+  .body {
+    padding: 8px 0;
+  }
+  .goal {
+    border-left: 3px solid var(--accent);
+    padding: 4px 0 4px 16px;
+    margin: 20px 0;
+  }
+  .goal b {
+    color: var(--accent);
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.06em;
+  }
+</style>

@@ -1,0 +1,49 @@
+part: Advanced
+title: Technique and Speed
+intro: Efficient motion lets you play faster, louder and longer with less effort.
+tasks:
+  - id: moeller
+    title: Moeller motion
+    text: One whipping motion produces a loud accent followed by soft taps. The arm leads, the wrist and
+      stick follow.
+    goal: Accented triplets in one hand at 100 BPM, relaxed.
+    groove:
+      sub: 3
+      bpm: 80
+      sn: Xxx Xxx Xxx Xxx
+      stick: RRR RRR RRR RRR
+    video: moeller
+  - id: sixstroke
+    title: Six-stroke roll
+    text: R L L R R L, with accents on the first and last notes. A favourite for fast fills.
+    goal: Triplets at 100 BPM with clear accents.
+    groove:
+      sub: 3
+      bpm: 75
+      sn: Xxx xxX Xxx xxX
+      stick: RLL RRL RLL RRL
+    video: sixstroke
+  - id: doublebass
+    title: Continuous 16ths on the kick
+    text: Either a double pedal (right, left, right, left) or heel-toe on one pedal. Start slow and keep
+      every note even.
+    goal: One minute of 16ths at 100 BPM, every note at the same volume.
+    groove:
+      sub: 4
+      bpm: 80
+      hh: x... x... x... x...
+      sn: .... x... .... x...
+      kk: xxxx xxxx xxxx xxxx
+    image: double-pedal
+    video: doublebass
+  - id: speed
+    title: Build speed safely
+    text: Pick a rudiment, play it clean at a comfortable tempo, raise the tempo by 4 BPM, repeat. If it
+      gets messy or tense, drop back 8 BPM.
+    goal: 16th-note single strokes at 130 BPM for one minute, relaxed.
+    groove:
+      sub: 4
+      bpm: 100
+      sn: xxxx xxxx xxxx xxxx
+      stick: RLRL RLRL RLRL RLRL
+    video: speed

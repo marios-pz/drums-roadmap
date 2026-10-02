@@ -1,0 +1,149 @@
+{
+  "kit-labeled": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Drum_set.svg/1280px-Drum_set.svg.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Drum_set.svg",
+    "author": "Pbroks13",
+    "license": "CC BY 3.0",
+    "caption": "A standard kit seen from the front: 1 ride cymbal, 2 floor tom, 3 rack toms, 4 bass drum (kick), 5 snare, 6 hi-hat."
+  },
+  "kit-photo": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/5-piece_drum_kit_with_two_crash_cymbals.jpg/1280px-5-piece_drum_kit_with_two_crash_cymbals.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:5-piece_drum_kit_with_two_crash_cymbals.jpg",
+    "author": "Pravito",
+    "license": "CC BY-SA 4.0",
+    "caption": "A five-piece kit: kick, snare, two rack toms, floor tom, plus hi-hat, ride and two crashes."
+  },
+  "snare": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Red_Wooden_snare_drum_isolated_on_a_white_background_%2827825736163%29.jpg/1280px-Red_Wooden_snare_drum_isolated_on_a_white_background_%2827825736163%29.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Red_Wooden_snare_drum_isolated_on_a_white_background_(27825736163).jpg",
+    "author": "Federico Cardoner",
+    "license": "CC BY 2.0",
+    "caption": "A snare drum. The wires (snares) under the bottom head give it its crack."
+  },
+  "snare-diagram": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Snare_drum_diagram.png/1280px-Snare_drum_diagram.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Snare_drum_diagram.png",
+    "author": "Andrew Lorimer",
+    "license": "CC BY-SA 4.0",
+    "caption": "Parts of a snare drum."
+  },
+  "hihat": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Schlagzeug_HDR.jpg/1280px-Schlagzeug_HDR.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Schlagzeug_HDR.jpg",
+    "author": "Tommapson",
+    "license": "CC0",
+    "caption": "Hi-hat in the foreground. Two cymbals on a stand; your foot opens and closes them."
+  },
+  "ride": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Anatolian_Emotion_Flat_Ride_Cymbal_%284709180551%29.jpg/1280px-Anatolian_Emotion_Flat_Ride_Cymbal_%284709180551%29.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Anatolian_Emotion_Flat_Ride_Cymbal_(4709180551).jpg",
+    "author": "Dave Kobrehel from CH",
+    "license": "CC BY 2.0",
+    "caption": "A ride cymbal: big, for steady patterns."
+  },
+  "crash": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/2006-07-06_crash_paiste_16.jpg/1280px-2006-07-06_crash_paiste_16.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:2006-07-06_crash_paiste_16.jpg",
+    "author": "Stephan Czuratis (Jazz-face)",
+    "license": "CC BY-SA 2.5",
+    "caption": "A crash cymbal: thinner, for accents."
+  },
+  "pad": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Practice_Pad_%2B_Metronome_Combo_-_Best_Practice.jpg/1280px-Practice_Pad_%2B_Metronome_Combo_-_Best_Practice.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Practice_Pad_%2B_Metronome_Combo_-_Best_Practice.jpg",
+    "author": "Pkim02224",
+    "license": "CC BY-SA 4.0",
+    "caption": "A practice pad with a metronome app. Quiet, cheap, and where most hand technique gets built."
+  },
+  "metronome": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Wittner_metronome.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Wittner_metronome.jpg",
+    "author": "Paco from Badajoz, España",
+    "license": "CC BY 2.0",
+    "caption": "A mechanical metronome. A free app does the same job."
+  },
+  "sticks": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Plain_wooden_drumsticks.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Plain_wooden_drumsticks.JPG",
+    "author": "Andrewa",
+    "license": "CC BY-SA 3.0",
+    "caption": "Wooden drumsticks in several sizes and tip shapes."
+  },
+  "brushes": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Horizontal_Red_Wooden_snare_drum_and_Jazz_brushes_isolated_on_a_white_background_%2828336793952%29.jpg/1280px-Horizontal_Red_Wooden_snare_drum_and_Jazz_brushes_isolated_on_a_white_background_%2828336793952%29.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Horizontal_Red_Wooden_snare_drum_and_Jazz_brushes_isolated_on_a_white_background_(28336793952).jpg",
+    "author": "TheMusicianLab.com (Federico Cardoner)",
+    "license": "CC BY 2.0",
+    "caption": "Wire brushes resting on a snare drum."
+  },
+  "rods": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Hot-rods_sticks_tipper_hinnerk-ruemenapf.jpg/1280px-Hot-rods_sticks_tipper_hinnerk-ruemenapf.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hot-rods_sticks_tipper_hinnerk-ruemenapf.jpg",
+    "author": "Hinnerk R Hinnerk Rümenapf",
+    "license": "CC BY-SA 3.0",
+    "caption": "Rods (bundled thin dowels, top) next to other wooden beaters."
+  },
+  "mallets": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Timpani_Mallets.JPG/1280px-Timpani_Mallets.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Timpani_Mallets.JPG",
+    "author": "ZooFari",
+    "license": "Public domain",
+    "caption": "Soft felt mallets, used for cymbal swells and tom rolls."
+  },
+  "double-pedal": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Dixon-double-pedal.jpg/1280px-Dixon-double-pedal.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Dixon-double-pedal.jpg",
+    "author": "slayer",
+    "license": "CC BY 2.0",
+    "caption": "A double bass drum pedal: one beater per foot on a single kick drum."
+  },
+  "genre-metal": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Wouter_Macare_%28drummer_for_Inferum%29.jpg/1280px-Wouter_Macare_%28drummer_for_Inferum%29.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Wouter_Macare_(drummer_for_Inferum).jpg",
+    "author": "Lendskaip",
+    "license": "CC0",
+    "caption": "Metal drummer live."
+  },
+  "genre-jazz": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Steve_Williams%2C_jazz_drummer.jpg/1280px-Steve_Williams%2C_jazz_drummer.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Steve_Williams,_jazz_drummer.jpg",
+    "author": "Marek Ślusarczyk (Tupungato) Photo gallery",
+    "license": "CC BY 3.0",
+    "caption": "Jazz drummer on a small kit."
+  },
+  "genre-rock": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Rock_concert_at_Sick%27s_Stadium%2C_1970_%2852178661807%29.jpg/1280px-Rock_concert_at_Sick%27s_Stadium%2C_1970_%2852178661807%29.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Rock_concert_at_Sick%27s_Stadium,_1970_(52178661807).jpg",
+    "author": "Seattle Municipal Archives from Seattle, WA",
+    "license": "CC BY 2.0",
+    "caption": "Rock drummer at an outdoor concert, 1970."
+  },
+  "genre-reggae": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Reggae_Drummer_%22Ras_Druid%22.jpg/1280px-Reggae_Drummer_%22Ras_Druid%22.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Reggae_Drummer_%22Ras_Druid%22.jpg",
+    "author": "Kabuto 7",
+    "license": "CC BY-SA 3.0",
+    "caption": "Reggae drummer."
+  },
+  "genre-blues": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Ellis_Hooks_Band_-_Drummer_%2814695999260%29.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ellis_Hooks_Band_-_Drummer_(14695999260).jpg",
+    "author": "Laurel L. Russwurm from Canada",
+    "license": "CC BY 2.0",
+    "caption": "Blues band drummer."
+  },
+  "genre-punk": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Norma_Jean_drummer_2006_%28cropped%29.jpg/1280px-Norma_Jean_drummer_2006_%28cropped%29.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Norma_Jean_drummer_2006_(cropped).jpg",
+    "author": "Jonathan Powell",
+    "license": "CC BY 2.0",
+    "caption": "Punk drummer live."
+  },
+  "genre-country": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Brandon_Lee_Webb_Band_Live.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Brandon_Lee_Webb_Band_Live.jpg",
+    "author": "Wherethefeelingrecords",
+    "license": "CC0",
+    "caption": "Country band playing live."
+  }
+}

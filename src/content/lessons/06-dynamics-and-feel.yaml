@@ -1,0 +1,47 @@
+part: Intermediate
+title: Dynamics and Feel
+intro: "What separates good from great: how loud or soft each note is."
+tasks:
+  - id: ghost
+    title: Ghost notes
+    text: "Notes in brackets are ghost notes: very soft snare strokes between the backbeats. The stick
+      barely leaves the head. They should be felt more than heard."
+    goal: Two minutes at 75 BPM, ghosts clearly softer than the backbeat.
+    groove:
+      sub: 4
+      bpm: 65
+      hh: x.x. x.x. x.x. x.x.
+      sn: .... X..g .g.. X..g
+      kk: x... ..x. ..x. ....
+    video: ghost
+  - id: openhh
+    title: Open hi-hat
+    text: "The small circle above a hi-hat note means open: lift your foot slightly so the cymbals ring,
+      then close them on the next beat. The foot timing is everything."
+    goal: Open on the "&" of 4 and close exactly on 1, two minutes at 80 BPM.
+    groove:
+      sub: 4
+      bpm: 70
+      hh: x.x. x.x. x.x. x.o.
+      sn: .... x... .... x...
+      kk: x... .... x.x. ....
+    video: openhh
+  - id: hhfoot
+    title: Hi-hat foot
+    text: Rock beat on the ride while the left foot closes the hi-hat on 2 and 4 (the x below the
+      staff). All four limbs at once.
+    goal: Two minutes at 80 BPM, foot "chick" clear and in time.
+    groove:
+      sub: 4
+      bpm: 70
+      rd: x.x. x.x. x.x. x.x.
+      sn: .... x... .... x...
+      kk: x... .... x... ....
+      hf: .... x... .... x...
+    video: hhfoot
+  - id: volumes
+    title: Same groove, three volumes
+    text: "Play the rock beat very quietly, then medium, then loud. Keep the tempo: most drummers speed
+      up as they get louder."
+    goal: One minute at each volume at 80 BPM, tempo steady.
+    video: volumes

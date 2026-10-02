@@ -1,0 +1,50 @@
+part: Beginner
+title: Fills and Song Form
+intro: Fills connect the parts of a song. Songs are built in phrases of 4 and 8 bars.
+tasks:
+  - id: fill1
+    title: One-beat fill
+    text: Groove for three beats, then four 16ths on the snare on beat 4. Don't rush the fill, and land
+      back on 1 in time.
+    goal: Loop at 80 BPM with the groove after the fill exactly in time.
+    groove:
+      sub: 4
+      bpm: 70
+      hh: x.x. x.x. x.x. ....
+      sn: .... x... .... xxxx
+      kk: x... .... x.x. ....
+    video: fill1
+  - id: fill-around
+    title: Fill around the toms
+    text: "One bar of groove, then a bar of 16ths moving down the kit: snare, tom 1, tom 2, floor tom.
+      Land on crash and kick."
+    goal: Loop at 70 BPM, landing every crash on 1.
+    groove:
+      sub: 4
+      bpm: 65
+      cr: x... .... .... .... | .... .... .... ....
+      hh: ..x. x.x. x.x. x.x. | .... .... .... ....
+      sn: .... x... .... x... | xxxx .... .... ....
+      t1: .... .... .... .... | .... xxxx .... ....
+      t2: .... .... .... .... | .... .... xxxx ....
+      ft: .... .... .... .... | .... .... .... xxxx
+      kk: x... .... x... .... | .... .... .... ....
+    video: fill-around
+  - id: phrase
+    title: 4-bar phrases
+    text: 'Three bars of groove and one bar with a fill. Most songs are built this way. Count the bars
+      out loud: "ONE 2 3 4, TWO 2 3 4..."'
+    goal: Five phrases in a row at 80 BPM without losing count.
+    groove:
+      sub: 4
+      bpm: 75
+      cr: x... .... .... .... | .... .... .... .... | .... .... .... .... | .... .... .... ....
+      hh: ..x. x.x. x.x. x.x. | x.x. x.x. x.x. x.x. | x.x. x.x. x.x. x.x. | x.x. x.x. x.x. ....
+      sn: .... x... .... x... | .... x... .... x... | .... x... .... x... | .... x... .... xxxx
+      kk: x... .... x... .... | x... .... x... .... | x... .... x... .... | x... .... x.x. ....
+    video: song
+  - id: song
+    title: Play a whole song
+    text: Pick any song you like with a simple, medium tempo beat. Listen first and count how many bars
+      the verse and chorus last. Then play along with the basic beat and a fill into each chorus.
+    goal: Play through one whole song without stopping.

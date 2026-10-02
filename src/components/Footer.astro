@@ -1,0 +1,45 @@
+---
+interface Props {
+  /** Show the "reset progress" control (roadmap pages only). */
+  withReset?: boolean;
+}
+---
+
+<footer>
+  <p>
+    A practice checklist, not a course, and not affiliated with any brand, school or creator. Videos
+    are embedded from YouTube and belong to their creators; none of them are sponsored. Photos come
+    from Wikimedia Commons under the licenses shown. Notation is drawn with abcjs and played with
+    the FluidR3 General MIDI sounds.
+  </p>
+  {Astro.props.withReset && (
+    <p>
+      Progress is saved in this browser only.{" "}
+      <button type="button" data-reset>
+        Reset progress
+      </button>
+    </p>
+  )}
+</footer>
+
+<style>
+  footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 56px;
+    padding-top: 16px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  p {
+    margin: 0 0 8px;
+    max-width: 52em;
+  }
+  button {
+    background: none;
+    border: 0;
+    padding: 0;
+    text-decoration: underline;
+    font-size: 14px;
+    color: var(--muted);
+  }
+</style>
