@@ -1,0 +1,58 @@
+part: Advanced
+title: Odd Time and Polyrhythm
+intro: Bars that aren't four beats long, and rhythms that cross each other.
+tasks:
+  - id: "54"
+    title: 5/4
+    text: Five beats per bar. Count "1 2 3 4 5" and feel the extra beat before the bar starts again.
+    goal: Two minutes at 90 BPM, never losing where 1 is.
+    groove:
+      sub: 4
+      bpm: 85
+      bar: 20
+      hh: x.x. x.x. x.x. x.x. x.x.
+      sn: .... x... .... x... ....
+      kk: x... .... x... .... x.x.
+    video: "54"
+  - id: "78"
+    title: 7/8
+    text: Seven 8th notes per bar, grouped 2 + 2 + 3. Count "1 2, 1 2, 1 2 3".
+    goal: Two minutes with the 8th note at 160 BPM.
+    groove:
+      sub: 1
+      bpm: 160
+      bar: 7
+      groups:
+        - 2
+        - 2
+        - 3
+      hh: xx xx xxx | xx xx xxx
+      sn: .. x. .x. | .. x. .x.
+      kk: x. .. x.. | x. .. x..
+    video: "78"
+  - id: "32"
+    title: 3 against 2
+    text:
+      In 3/4, the hi-hat plays three quarter notes while the kick plays two even notes (one every
+      three 8ths). Say "pass the gol-den but-ter".
+    goal: Loop for one minute at 60 BPM, both rhythms even.
+    groove:
+      sub: 2
+      bpm: 60
+      bar: 6
+      hh: x. x. x.
+      kk: x. .x ..
+    video: "32"
+  - id: "43"
+    title: 4 against 3
+    text:
+      In 3/4, the kick plays three quarter notes while the snare plays four even notes (one every
+      three 16ths).
+    goal: Loop for one minute at 50 BPM, both rhythms even.
+    groove:
+      sub: 4
+      bpm: 50
+      bar: 12
+      sn: x..x ..x. .x..
+      kk: x... x... x...
+    video: "43"

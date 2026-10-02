@@ -1,0 +1,51 @@
+part: Beginner
+title: Foundations
+intro: "Before any beats: know the instrument, sit well, hold the sticks and learn to count."
+tasks:
+  - id: kit
+    title: Know your kit
+    text:
+      A standard kit has a kick (bass drum) played with the right foot, a snare in front of you, a
+      hi-hat (two cymbals on a stand, opened and closed with the left foot), one or two rack toms, a
+      floor tom, a ride cymbal for steady patterns and a crash cymbal for accents.
+    goal: Point to and name every piece of a kit without looking anything up.
+    image: kit-labeled
+    video: kit
+  - id: setup
+    title: Set up the throne and kit
+    text:
+      "Sit so your thighs are level or slope slightly down. The snare sits around waist height. You
+      should reach every drum and cymbal without stretching or leaning. Comfort first: tension is
+      the enemy of good playing."
+    goal: Play for 10 minutes with no back, neck or shoulder tension.
+    video: setup
+  - id: grip
+    title: Matched grip
+    text:
+      Pinch the stick between thumb and index finger about a third of the way up from the end. That
+      pinch point is the fulcrum. Wrap the other fingers loosely. Let the stick bounce back off the
+      head; don't squeeze it.
+    goal: One minute of steady strokes per hand with the stick rebounding freely.
+    image: pad
+    video: grip
+  - id: count
+    title: Count out loud
+    text: 'Each beat splits into four 16th notes: "1 e & a, 2 e & a, 3 e & a, 4 e & a". Counting out
+      loud is the quickest way to stay in time. Below: quarter notes on the snare, one per beat.'
+    goal: Count 16ths out loud while clapping quarter notes at 70 BPM for one minute.
+    groove:
+      sub: 4
+      bpm: 70
+      sn: x... x... x... x...
+    video: count
+  - id: metro
+    title: Play with a metronome
+    text: The metronome is your band. A free metronome app is fine. Press Play below and try to make
+      your hit disappear into the click.
+    goal: Quarter notes at 60 BPM for two minutes, every hit exactly on the click.
+    groove:
+      sub: 4
+      bpm: 60
+      sn: x... x... x... x...
+    image: metronome
+    video: metro

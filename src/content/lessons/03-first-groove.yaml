@@ -1,0 +1,67 @@
+part: Beginner
+title: First Groove
+intro: The rock beat is underneath most music you hear. Learn it, then twist it.
+tasks:
+  - id: rock
+    title: The basic rock beat
+    text:
+      "Hi-hat on every 8th note, snare on 2 and 4, kick on 1 and 3. Start slow and add one limb at a
+      time: hi-hat alone, then add the snare, then the kick."
+    goal: Two minutes at 80 BPM without stopping.
+    groove:
+      sub: 4
+      bpm: 70
+      hh: x.x. x.x. x.x. x.x.
+      sn: .... x... .... x...
+      kk: x... .... x... ....
+    image: kit-photo
+    video: rock
+  - id: kick-and3
+    title: Kick on the "&" of 3
+    text:
+      Add a kick on the "&" of 3. This small change gives one of the most used grooves in pop and
+      rock.
+    goal: Two minutes at 80 BPM.
+    groove:
+      sub: 4
+      bpm: 70
+      hh: x.x. x.x. x.x. x.x.
+      sn: .... x... .... x...
+      kk: x... .... x.x. ....
+    video: kick-vars
+  - id: kick-vars
+    title: Kick variations
+    text: The hands stay the same, the kick moves. Loop it until each bar feels natural.
+    goal: All four bars in a row at 75 BPM.
+    groove:
+      sub: 4
+      bpm: 70
+      hh: x.x. x.x. x.x. x.x. | x.x. x.x. x.x. x.x. | x.x. x.x. x.x. x.x. | x.x. x.x. x.x. x.x.
+      sn: .... x... .... x... | .... x... .... x... | .... x... .... x... | .... x... .... x...
+      kk: x... ..x. x... .... | x.x. .... x.x. .... | x... .... x.x. ..x. | x.x. ..x. ..x. ....
+  - id: ride
+    title: Move it to the ride
+    text: Play the same beat with your right hand on the ride cymbal instead of the hi-hat. Hit it
+      roughly halfway between the bell and the edge.
+    goal: Rock beat on the ride for two minutes at 80 BPM.
+    groove:
+      sub: 4
+      bpm: 70
+      rd: x.x. x.x. x.x. x.x.
+      sn: .... x... .... x...
+      kk: x... .... x... ....
+    image: ride
+    video: ride
+  - id: crash1
+    title: Crash on 1
+    text: "Mark the start of a phrase: crash and kick together on beat 1, then back to the hi-hat."
+    goal: Loop the two bars at 80 BPM without hesitating at the crash.
+    groove:
+      sub: 4
+      bpm: 70
+      cr: x... .... .... .... | .... .... .... ....
+      hh: ..x. x.x. x.x. x.x. | x.x. x.x. x.x. x.x.
+      sn: .... x... .... x... | .... x... .... x...
+      kk: x... .... x... .... | x... .... x... ....
+    image: crash
+    video: crash1

@@ -1,0 +1,61 @@
+part: Intermediate
+title: Rudiments
+intro: Rudiments are the vocabulary of the hands. Start with the essential few.
+tasks:
+  - id: paradiddle
+    title: Single paradiddle
+    text:
+      R L R R, L R L L. Accent the first note of each group (the > sign). The accent switches hands
+      every beat.
+    goal: 16th-note paradiddles at 90 BPM for two minutes with clear accents.
+    groove:
+      sub: 4
+      bpm: 70
+      sn: Xxxx Xxxx Xxxx Xxxx
+      stick: RLRR LRLL RLRR LRLL
+    image: snare
+    video: paradiddle
+  - id: flam
+    title: Flams
+    text:
+      "The small slashed note is a grace note: a very soft stroke from one hand just before a full
+      stroke from the other. They should sound like one fat note, not two hits."
+    goal: Alternating flams on quarter notes at 80 BPM, each one sounding like a single note.
+    groove:
+      sub: 4
+      bpm: 70
+      sn: f... f... f... f...
+      stick: R... L... R... L...
+    video: flam
+  - id: drag
+    title: Drags
+    text:
+      Two soft grace notes from one hand before a main stroke from the other. Think "diddle-PLAY".
+      Get the flam clean first.
+    goal: Alternating drags on quarter notes at 70 BPM, grace notes quiet and even.
+    video: drag
+  - id: hh16
+    title: 16th-note hi-hat groove
+    text:
+      The right hand plays every 16th on the hi-hat. Keep it light and accent the downbeats a little
+      to feel the pulse.
+    goal: Two minutes at 80 BPM, hi-hat even and relaxed.
+    groove:
+      sub: 4
+      bpm: 60
+      hh: Xxxx Xxxx Xxxx Xxxx
+      sn: .... x... .... x...
+      kk: x... .... x.x. ....
+    image: hihat
+    video: hh16
+  - id: accents
+    title: Accent patterns
+    text: 'Single strokes with the accent moving: on the beat, on "e", on "&", on "a". Accents loud,
+      everything else quiet.'
+    goal: All four bars at 80 BPM with a clear difference between loud and soft.
+    groove:
+      sub: 4
+      bpm: 70
+      sn: Xxxx Xxxx Xxxx Xxxx | xXxx xXxx xXxx xXxx | xxXx xxXx xxXx xxXx | xxxX xxxX xxxX xxxX
+      stick: RLRL RLRL RLRL RLRL | RLRL RLRL RLRL RLRL | RLRL RLRL RLRL RLRL | RLRL RLRL RLRL RLRL
+    video: accents

@@ -1,0 +1,95 @@
+---
+import { getEntry, type CollectionEntry } from "astro:content";
+
+interface Props {
+  id: CollectionEntry<"videos">["id"];
+}
+
+const video = await getEntry("videos", Astro.props.id);
+if (!video) throw new Error(`Unknown video "${Astro.props.id}"`);
+const { youtubeId, title, channel } = video.data;
+---
+
+<figure>
+  <youtube-video data-id={youtubeId} data-title={title}>
+    <button type="button" aria-label={`Play video: ${title}`}>
+      <img src={`https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`} alt="" loading="lazy" />
+      <span>Play video</span>
+    </button>
+  </youtube-video>
+  <figcaption>
+    Video: <cite>{title}</cite> by {channel},{" "}
+    <a href={`https://www.youtube.com/watch?v=${youtubeId}`} target="_blank" rel="noopener">
+      on YouTube
+    </a>
+  </figcaption>
+</figure>
+
+<script>
+  // The YouTube player only loads after a click, so pages stay light and nothing is sent to
+  // YouTube until the visitor asks for it.
+  class YoutubeVideo extends HTMLElement {
+    connectedCallback() {
+      this.querySelector("button")!.addEventListener("click", () => {
+        const frame = document.createElement("iframe");
+        frame.src = `https://www.youtube-nocookie.com/embed/${this.dataset.id}?autoplay=1&rel=0`;
+        frame.title = this.dataset.title!;
+        frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+        frame.allowFullscreen = true;
+        this.replaceChildren(frame);
+      });
+    }
+  }
+  customElements.define("youtube-video", YoutubeVideo);
+</script>
+
+<style>
+  figure {
+    margin: 22px 0;
+    max-width: 480px;
+  }
+  youtube-video {
+    display: block;
+    aspect-ratio: 16 / 9;
+    background: #000;
+  }
+  button,
+  youtube-video :global(iframe) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    position: relative;
+    background: none;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+  }
+  button:hover img {
+    opacity: 1;
+  }
+  span {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    background: var(--paper);
+    color: var(--ink);
+    padding: 6px 14px 6px 34px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  span::before {
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 7px solid transparent;
+    border-left: 11px solid var(--accent);
+    border-right: 0;
+  }
+</style>

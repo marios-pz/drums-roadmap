@@ -1,0 +1,39 @@
+---
+import { getEntry, type CollectionEntry } from "astro:content";
+
+interface Props {
+  id: CollectionEntry<"images">["id"];
+}
+
+const photo = await getEntry("images", Astro.props.id);
+if (!photo) throw new Error(`Unknown image "${Astro.props.id}"`);
+const { src, caption, author, license, page } = photo.data;
+---
+
+<figure>
+  <img src={src} alt={caption} loading="lazy" />
+  <figcaption>
+    {caption}
+    <span class="credit">
+      Photo: {author}, {license},{" "}
+      <a href={page} target="_blank" rel="noopener">
+        Wikimedia Commons
+      </a>
+    </span>
+  </figcaption>
+</figure>
+
+<style>
+  figure {
+    margin: 22px 0;
+  }
+  img {
+    max-height: 340px;
+    width: auto;
+    border: 1px solid var(--rule);
+  }
+  .credit {
+    display: block;
+    font-size: 13px;
+  }
+</style>

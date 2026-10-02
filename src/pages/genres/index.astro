@@ -1,0 +1,91 @@
+---
+import { getCollection, render } from "astro:content";
+import Footer from "../../components/Footer.astro";
+import Groove from "../../components/Groove.astro";
+import Photo from "../../components/Photo.astro";
+import Video from "../../components/Video.astro";
+import Base from "../../layouts/Base.astro";
+import { url } from "../../lib/url";
+
+const genres = (await getCollection("genres")).sort((a, b) => a.data.order - b.data.order);
+const sections = await Promise.all(
+  genres.map(async (genre) => ({ genre, Body: (await render(genre)).Content })),
+);
+---
+
+<Base
+  title="Genres"
+  section="genres"
+  description="The core grooves of rock, metal, punk, funk, jazz, blues, country, reggae, latin, hip-hop, disco and gospel, in drum notation you can play."
+>
+  <main>
+    <p class="label">Library</p>
+    <h1>Genres</h1>
+    <p class="lede">
+      The signature grooves of {genres.length} styles. Each is written in drum notation and plays in
+      your browser, so you can hear it and read it at the same time. New to notation? Start with
+      <a href={url("lessons/hands-and-reading/")}>lesson 2</a>.
+    </p>
+    <ul class="page-index">
+      {genres.map((g) => (
+        <li>
+          <a href={`#${g.id}`}>{g.data.name}</a>
+        </li>
+      ))}
+    </ul>
+
+    {sections.map(({ genre, Body }) => (
+      <section id={genre.id}>
+        <h2>{genre.data.name}</h2>
+        <p class="facts">
+          <span>
+            <b>Tempo</b> {genre.data.tempo}
+          </span>
+          <span>
+            <b>Feel</b> {genre.data.feel}
+          </span>
+        </p>
+        <Body />
+        <h3>What to listen for</h3>
+        <ul>
+          {genre.data.listen.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+        {genre.data.image && <Photo id={genre.data.image.id} />}
+        {genre.data.grooves.map(({ title, groove }) => (
+          <Groove groove={groove} title={title} />
+        ))}
+        <div class="columns">
+          {genre.data.videos.map((video) => (
+            <Video id={video.id} />
+          ))}
+        </div>
+      </section>
+    ))}
+    <Footer />
+  </main>
+</Base>
+
+<style>
+  main {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 16px 80px;
+  }
+  h2 {
+    border-top: 1px solid var(--ink);
+    padding-top: 18px;
+  }
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 28px;
+    font-size: 15px;
+    color: var(--muted);
+    margin: 0 0 12px;
+  }
+  .facts b {
+    color: var(--ink);
+  }
+</style>

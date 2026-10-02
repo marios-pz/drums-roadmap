@@ -1,0 +1,117 @@
+---
+import { scoreWidth, type Groove } from "../lib/groove";
+
+interface Props {
+  groove: Groove;
+  title?: string;
+}
+
+const { groove, title } = Astro.props;
+const maxBpm = Math.max(200, groove.bpm * 2);
+---
+
+<groove-player class="groove" data-groove={JSON.stringify(groove)}>
+  {title && <p class="title">{title}</p>}
+  {groove.swing && <p class="note">Swing feel: play each pair of 8th notes long-short.</p>}
+  <div style={`max-width: ${scoreWidth(groove) + 40}px`}>
+    <div
+      data-score
+      role="img"
+      aria-label={title ? `Drum notation: ${title}` : "Drum notation"}
+    ></div>
+  </div>
+  <div class="controls">
+    <button type="button" data-play>
+      Play
+    </button>
+    <label class="tempo">
+      Tempo
+      <input
+        type="range"
+        min="30"
+        max={maxBpm}
+        value={groove.bpm}
+        data-tempo
+        aria-label="Tempo in BPM"
+      />
+      <output>{groove.bpm}</output> BPM
+    </label>
+    <label>
+      <input type="checkbox" checked data-click /> Metronome
+    </label>
+  </div>
+</groove-player>
+
+<script>
+  import "../scripts/player";
+</script>
+
+<style>
+  .groove {
+    display: block;
+    margin: 22px 0;
+    padding: 16px 18px 12px;
+    background: var(--sheet);
+    border: 1px solid var(--rule);
+  }
+  .title {
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  .note {
+    font-size: 15px;
+    font-style: italic;
+    color: var(--muted);
+    margin: 0;
+  }
+  [data-score] {
+    margin: 8px 0 4px;
+  }
+  [data-score] :global(.playing),
+  [data-score] :global(.playing path) {
+    fill: var(--accent);
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 22px;
+    font-size: 15px;
+    border-top: 1px solid var(--rule);
+    padding-top: 10px;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  button {
+    min-width: 92px;
+    padding: 6px 16px;
+    border: 0;
+    border-radius: 2px;
+    background: var(--ink);
+    color: var(--paper);
+    font-weight: 600;
+  }
+  button:hover {
+    background: var(--accent);
+  }
+  input {
+    accent-color: var(--accent);
+  }
+  .tempo input {
+    width: 150px;
+  }
+  output {
+    min-width: 2.2em;
+    text-align: right;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  @media (max-width: 860px) {
+    .tempo input {
+      width: 110px;
+    }
+  }
+</style>

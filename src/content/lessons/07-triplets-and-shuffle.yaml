@@ -1,0 +1,49 @@
+part: Intermediate
+title: Triplets and Shuffle
+intro: Split each beat into three. Blues, shuffles and 12/8 live here.
+tasks:
+  - id: triplets
+    title: Triplets in 12/8
+    text:
+      'In 12/8 each beat is a group of three 8th notes: "1 trip let, 2 trip let". Alternate hands,
+      so every beat starts on a different hand.'
+    goal: Even triplets at 80 BPM, three identical notes per beat.
+    groove:
+      sub: 3
+      bpm: 70
+      sn: Xxx Xxx Xxx Xxx
+      stick: RLR LRL RLR LRL
+    video: triplets
+  - id: shuffle
+    title: Basic shuffle
+    text: Leave out the middle note of each triplet on the hi-hat. That long-short bounce is the shuffle.
+    goal: Two minutes at 90 BPM with a relaxed bounce.
+    groove:
+      sub: 3
+      bpm: 85
+      hh: x.x x.x x.x x.x
+      sn: ... x.. ... x..
+      kk: x.. ... x.. ...
+    video: shuffle
+  - id: "128"
+    title: 12/8 slow blues
+    text: All triplets on the hi-hat, snare on 2 and 4. Very slow and heavy.
+    goal: Two minutes at 55 BPM without rushing.
+    groove:
+      sub: 3
+      bpm: 55
+      hh: Xxx Xxx Xxx Xxx
+      sn: ... x.. ... x..
+      kk: x.. ... x.x ...
+    video: "128"
+  - id: halftime
+    title: Half-time feel
+    text: Same tempo, but the snare only on 3. The song suddenly feels twice as slow and heavy.
+    goal: Switch between the rock beat and half-time every 4 bars at 80 BPM.
+    groove:
+      sub: 4
+      bpm: 80
+      hh: x.x. x.x. x.x. x.x.
+      sn: .... .... x... ....
+      kk: x... ..x. ..x. ....
+    video: halftime

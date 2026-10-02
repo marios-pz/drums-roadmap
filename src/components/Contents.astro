@@ -1,0 +1,120 @@
+---
+import { lessonUrl, PARTS, type Lesson } from "../lib/lessons";
+
+interface Props {
+  lessons: Lesson[];
+  /** Number of the lesson being viewed, if any. */
+  current?: number;
+  /** Show each lesson's introduction (used on the home page). */
+  withIntros?: boolean;
+}
+
+const { lessons, current, withIntros = false } = Astro.props;
+const parts = Object.keys(PARTS) as (keyof typeof PARTS)[];
+---
+
+<nav aria-label="Lessons" class:list={["contents", { large: withIntros }]}>
+  {parts.map((part) => (
+    <section>
+      <p class="part">
+        {PARTS[part]} · {part}
+      </p>
+      <ol>
+        {lessons
+          .filter((l) => l.data.part === part)
+          .map((l) => (
+            <li>
+              <a
+                href={lessonUrl(l)}
+                data-lesson-link={l.number - 1}
+                aria-current={l.number === current ? "page" : undefined}
+              >
+                <span class="number">{l.number}</span>
+                <span>{l.data.title}</span>
+                <span class="leader" />
+                <span class="status" data-status>
+                  0/{l.data.tasks.length}
+                </span>
+              </a>
+              {withIntros && <p class="intro">{l.data.intro}</p>}
+            </li>
+          ))}
+      </ol>
+    </section>
+  ))}
+  <p class="total" data-total></p>
+</nav>
+
+<style>
+  .part {
+    margin: 22px 0 6px;
+    font-size: 15px;
+    color: var(--muted);
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.06em;
+  }
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    text-decoration: none;
+    padding: 5px 0 5px 10px;
+    border-left: 2px solid transparent;
+    font-size: 16px;
+  }
+  a[aria-current="page"] {
+    border-left-color: var(--accent);
+    font-weight: 600;
+  }
+  li {
+    max-width: none;
+  }
+  .number {
+    width: 1.4em;
+    color: var(--muted);
+  }
+  .leader {
+    flex: 1;
+    min-width: 12px;
+    border-bottom: 1px dotted var(--rule);
+    transform: translateY(-4px);
+  }
+  .status {
+    font-size: 14px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  a.locked {
+    color: var(--muted);
+  }
+  a.locked .status {
+    font-style: italic;
+  }
+  a.complete .status {
+    color: var(--accent);
+  }
+  .total {
+    margin-top: 24px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .large a {
+    font-size: 21px;
+    padding-left: 0;
+  }
+  .large .intro {
+    margin: 0 0 10px 2.1em;
+    font-size: 16px;
+    color: var(--muted);
+  }
+  .large .part {
+    margin-top: 36px;
+    font-size: 17px;
+  }
+</style>
