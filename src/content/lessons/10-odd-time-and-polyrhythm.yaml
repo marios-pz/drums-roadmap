@@ -32,7 +32,8 @@ tasks:
     video: "78"
   - id: "32"
     title: 3 against 2
-    text: In 3/4, the hi-hat plays three quarter notes while the kick plays two even notes (one every
+    text:
+      In 3/4, the hi-hat plays three quarter notes while the kick plays two even notes (one every
       three 8ths). Say "pass the gol-den but-ter".
     goal: Loop for one minute at 60 BPM, both rhythms even.
     groove:
@@ -44,7 +45,8 @@ tasks:
     video: "32"
   - id: "43"
     title: 4 against 3
-    text: In 3/4, the kick plays three quarter notes while the snare plays four even notes (one every
+    text:
+      In 3/4, the kick plays three quarter notes while the snare plays four even notes (one every
       three 16ths).
     goal: Loop for one minute at 50 BPM, both rhythms even.
     groove:

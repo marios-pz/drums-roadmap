@@ -17,6 +17,10 @@ npm run build    # type check and build to dist/
 
 Pushing to `main` deploys to GitHub Pages through `.github/workflows/deploy.yml`.
 
+A pre-commit hook (husky and lint-staged, installed by `npm install`) runs Prettier on staged
+code, Markdown, YAML and JSON, so commits are always formatted. Dependabot opens weekly pull
+requests for npm packages and GitHub Actions.
+
 ## Where things live
 
 ```
@@ -97,3 +101,9 @@ curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDE
 
 A JSON response is fine; 401 or 404 means it can't be embedded. Videos are lessons, not
 promotions: no sponsored content, brand channels, or paid-course platforms.
+
+## Drum sounds
+
+Playback uses the General MIDI percussion samples from the Fluid R3 GM SoundFont by Frank Wen (CC
+BY 3.0), the default sounds of abcjs. They are stored in `public/soundfont/` and served from this
+site; see the license note in that folder.

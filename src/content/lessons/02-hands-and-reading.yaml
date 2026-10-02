@@ -4,7 +4,8 @@ intro: Most of drumming is your hands, and most learning material is written dow
 tasks:
   - id: read
     title: Read drum notation
-    text: Drum music uses a normal five-line staff, but each line or space is a drum instead of a pitch.
+    text:
+      Drum music uses a normal five-line staff, but each line or space is a drum instead of a pitch.
       Kick sits low, snare in the middle, cymbals on top with x-shaped noteheads. Hands are usually
       written with stems up, feet with stems down. Keep this key handy; every exercise on this site
       uses it.
@@ -13,7 +14,8 @@ tasks:
     video: read
   - id: values
     title: Quarter, 8th and 16th notes
-    text: Same tempo, three speeds. One bar of quarter notes (one per beat), one bar of 8th notes (two
+    text:
+      Same tempo, three speeds. One bar of quarter notes (one per beat), one bar of 8th notes (two
       per beat, joined by one beam) and one of 16th notes (four per beat, two beams). The tempo
       never changes, only how many notes fit in each beat.
     goal: Switch every bar at 70 BPM without speeding up or slowing down.
@@ -46,8 +48,8 @@ tasks:
     video: doubles
   - id: offbeats
     title: Play only the "&"
-    text: "The 8th rests mean: don't play there. Count \"1 & 2 & 3 & 4 &\" and only hit on \"&\",
-      between the clicks."
+    text: 'The 8th rests mean: don''t play there. Count "1 & 2 & 3 & 4 &" and only hit on "&",
+      between the clicks.'
     goal: Only the offbeats for one minute at 70 BPM with the metronome on.
     groove:
       sub: 4

@@ -4,7 +4,8 @@ intro: Split each beat into three. Blues, shuffles and 12/8 live here.
 tasks:
   - id: triplets
     title: Triplets in 12/8
-    text: 'In 12/8 each beat is a group of three 8th notes: "1 trip let, 2 trip let". Alternate hands,
+    text:
+      'In 12/8 each beat is a group of three 8th notes: "1 trip let, 2 trip let". Alternate hands,
       so every beat starts on a different hand.'
     goal: Even triplets at 80 BPM, three identical notes per beat.
     groove:

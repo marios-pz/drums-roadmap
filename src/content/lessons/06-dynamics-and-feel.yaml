@@ -4,7 +4,8 @@ intro: "What separates good from great: how loud or soft each note is."
 tasks:
   - id: ghost
     title: Ghost notes
-    text: "Notes in brackets are ghost notes: very soft snare strokes between the backbeats. The stick
+    text:
+      "Notes in brackets are ghost notes: very soft snare strokes between the backbeats. The stick
       barely leaves the head. They should be felt more than heard."
     goal: Two minutes at 75 BPM, ghosts clearly softer than the backbeat.
     groove:
@@ -16,7 +17,8 @@ tasks:
     video: ghost
   - id: openhh
     title: Open hi-hat
-    text: "The small circle above a hi-hat note means open: lift your foot slightly so the cymbals ring,
+    text:
+      "The small circle above a hi-hat note means open: lift your foot slightly so the cymbals ring,
       then close them on the next beat. The foot timing is everything."
     goal: Open on the "&" of 4 and close exactly on 1, two minutes at 80 BPM.
     groove:
@@ -41,7 +43,8 @@ tasks:
     video: hhfoot
   - id: volumes
     title: Same groove, three volumes
-    text: "Play the rock beat very quietly, then medium, then loud. Keep the tempo: most drummers speed
+    text:
+      "Play the rock beat very quietly, then medium, then loud. Keep the tempo: most drummers speed
       up as they get louder."
     goal: One minute at each volume at 80 BPM, tempo steady.
     video: volumes

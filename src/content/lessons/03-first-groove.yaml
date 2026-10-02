@@ -4,7 +4,8 @@ intro: The rock beat is underneath most music you hear. Learn it, then twist it.
 tasks:
   - id: rock
     title: The basic rock beat
-    text: "Hi-hat on every 8th note, snare on 2 and 4, kick on 1 and 3. Start slow and add one limb at a
+    text:
+      "Hi-hat on every 8th note, snare on 2 and 4, kick on 1 and 3. Start slow and add one limb at a
       time: hi-hat alone, then add the snare, then the kick."
     goal: Two minutes at 80 BPM without stopping.
     groove:
@@ -17,7 +18,8 @@ tasks:
     video: rock
   - id: kick-and3
     title: Kick on the "&" of 3
-    text: Add a kick on the "&" of 3. This small change gives one of the most used grooves in pop and
+    text:
+      Add a kick on the "&" of 3. This small change gives one of the most used grooves in pop and
       rock.
     goal: Two minutes at 80 BPM.
     groove:

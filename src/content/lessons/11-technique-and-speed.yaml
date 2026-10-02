@@ -4,7 +4,8 @@ intro: Efficient motion lets you play faster, louder and longer with less effort
 tasks:
   - id: moeller
     title: Moeller motion
-    text: One whipping motion produces a loud accent followed by soft taps. The arm leads, the wrist and
+    text:
+      One whipping motion produces a loud accent followed by soft taps. The arm leads, the wrist and
       stick follow.
     goal: Accented triplets in one hand at 100 BPM, relaxed.
     groove:
@@ -25,7 +26,8 @@ tasks:
     video: sixstroke
   - id: doublebass
     title: Continuous 16ths on the kick
-    text: Either a double pedal (right, left, right, left) or heel-toe on one pedal. Start slow and keep
+    text:
+      Either a double pedal (right, left, right, left) or heel-toe on one pedal. Start slow and keep
       every note even.
     goal: One minute of 16ths at 100 BPM, every note at the same volume.
     groove:
@@ -38,7 +40,8 @@ tasks:
     video: doublebass
   - id: speed
     title: Build speed safely
-    text: Pick a rudiment, play it clean at a comfortable tempo, raise the tempo by 4 BPM, repeat. If it
+    text:
+      Pick a rudiment, play it clean at a comfortable tempo, raise the tempo by 4 BPM, repeat. If it
       gets messy or tense, drop back 8 BPM.
     goal: 16th-note single strokes at 130 BPM for one minute, relaxed.
     groove:

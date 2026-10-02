@@ -4,25 +4,29 @@ intro: The last level isn't a technique; it's playing music with other people.
 tasks:
   - id: click
     title: Play a song to a click
-    text: Put a click track in headphones and play a full song on top of it, the way studio sessions and
+    text:
+      Put a click track in headphones and play a full song on top of it, the way studio sessions and
       live shows with backing tracks work.
     goal: Play a whole song with a click and stay locked from start to finish.
     video: click
   - id: record
     title: Record yourself
-    text: Record a practice session on your phone. Listen back the next day and write down three things
+    text:
+      Record a practice session on your phone. Listen back the next day and write down three things
       to improve.
     goal: Record, review, and fix one of those three things.
     video: record
   - id: transcribe
     title: Transcribe a groove by ear
-    text: Pick a song and work out its main groove. Write it down in notation, using the key from level
+    text:
+      Pick a song and work out its main groove. Write it down in notation, using the key from level
       2.
     goal: Transcribe three grooves and play them along with the songs.
     video: transcribe
   - id: solo
     title: Trade fours
-    text: Four bars of groove, four bars of solo, back to groove, always in time. Use ideas from every
+    text:
+      Four bars of groove, four bars of solo, back to groove, always in time. Use ideas from every
       level so far.
     goal: Five rounds in a row at 90 BPM without losing the form.
     video: fours

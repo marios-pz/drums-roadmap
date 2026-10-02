@@ -63,7 +63,8 @@ tasks:
     video: onedrop
   - id: jazz
     title: Jazz ride pattern
-    text: '"Ding, ding-a, ding, ding-a" on the ride, hi-hat foot on 2 and 4, kick feathered very softly
+    text:
+      '"Ding, ding-a, ding, ding-a" on the ride, hi-hat foot on 2 and 4, kick feathered very softly
       on all four beats.'
     goal: Three minutes at 120 BPM, relaxed and swinging.
     groove:
@@ -76,7 +77,8 @@ tasks:
     video: jazz
   - id: bossa
     title: Bossa nova
-    text: Steady 8ths on the hi-hat, a soft kick pattern, and a clave rhythm on cross-stick spread over
+    text:
+      Steady 8ths on the hi-hat, a soft kick pattern, and a clave rhythm on cross-stick spread over
       two bars.
     goal: Two minutes at 130 BPM, soft and smooth.
     groove:
