@@ -16,17 +16,17 @@
   },
   "dependencies": {
     "@fontsource-variable/alegreya": "^5.3.0",
-    "abcjs": "^6.7.1",
-    "astro": "^7.3.5"
+    "abcjs": "^6.7.2",
+    "astro": "^7.4.1"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.10",
+    "@astrojs/check": "^0.9.11",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
-    "prettier": "^3.9.9",
-    "prettier-plugin-astro": "^1.1.0",
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.1",
     "typescript": "^6.0.3",
-    "vitest": "^5.0.3"
+    "vitest": "^5.0.5"
   },
   "lint-staged": {
     "*.{js,mjs,ts,astro,css,md,json,yaml,yml}": "prettier --write"
